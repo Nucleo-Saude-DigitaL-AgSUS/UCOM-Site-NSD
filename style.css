@@ -375,11 +375,12 @@ img {
 /* CORPO 3 - SUBSTITUIÇÃO TEMPORÁRIA DE MÉDICOS VIA TELESSAÚDE*/
 #Corpo3{
     gap:3%;
+    padding-top: 3%;
 }
 
 .tituloC3{
     color:  #00a79d;
-    margin-top: 2%;
+    margin: 0% 0% 0% 15%;
 }
 
 #div2C3{
@@ -393,8 +394,7 @@ img {
 
 .textoCorpo3{
     max-width: 1200px; 
-    margin-left: 20%;
-    margin-right: auto;
+    margin: 5% 0% 0% 20%;
 }
 
 .imagemC3{
@@ -406,12 +406,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15%;
 }
 
 .barralateralImg{
     height: 650px;
-    width: calc(80px + 5vw);
+    width: 100px;
+    max-width: 100px;
     margin-left: 85%;
 }
 
@@ -422,7 +422,7 @@ img {
     columns: center; 
     gap:8%;
     white-space: nowrap;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .botaoCorpo3 li {
@@ -523,7 +523,7 @@ img {
 .carousel-indicators .dot {
     width: 10px;
     height: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(66, 65, 65, 0.5);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -582,7 +582,7 @@ img {
     font-size: 1.8rem !important; 
     font-family: 'Montserrat', sans-serif;
     border: none !important;
-    background-color: #00a79d !important;
+    background-color: #fe5558!important;
     color: #fff;
     text-shadow: 4px 4px 5px #4a4a4a;
     border-radius: 45px !important;
@@ -707,7 +707,7 @@ img {
     align-items: center;
     font-size: 1.2rem;
     color: #fff;
-    background-image: linear-gradient(to bottom, #016185, #71d285);
+    background-image: linear-gradient(to bottom, #016185, #00a79d);
     border-radius: 0px;
     padding: 2%;
     box-shadow: 0 0 15px #4a4a4a;
@@ -736,6 +736,13 @@ img {
     max-width: 90%;
     overflow-wrap: break-word;
     text-align: justify;
+}
+
+#iFliper1{
+    color: #77e7e9;
+}
+#iFliper2{
+    color: #fed433;
 }
 
 
@@ -817,7 +824,7 @@ ul li img {
     font-family: 'Arial', sans-serif; 
     text-align: center;
     padding: 3%;
-    margin-right: 10%;
+    margin-right: 25%;
 }
 
 
@@ -825,7 +832,6 @@ ul li img {
 .tituloC9{
     padding-top: 5%;
     text-shadow: 2px 2px 0px black, -2px -2px 0px white;
-    padding-bottom: 3%;
 }
 
 #Corpo9{
@@ -886,7 +892,7 @@ ul li img {
     align-items: center;
     text-align: center;
     border-radius: 20%;
-    margin: 10% 15% 15% 0%;
+    margin: 10% 10% 15% 0%;
 }
 .imgC9D{
     width: calc(200px + 5vw);
@@ -1126,6 +1132,7 @@ ul li img {
     display: flex; 
     flex-direction: column; 
     gap: 16px; 
+    padding-top: 5%;
 }
 
 .pCorpo11E{
@@ -1272,20 +1279,23 @@ ul li img {
     color: #52b297;
     text-align: center;
     margin: 5% 10% 3% 15%;
+    padding-top: 3%;
 }
 
 #Corpo14{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0% 10% 0% 15%;
+    margin: 0% 10% 0% 10%;
+}
+.c14Noticias{
+    margin-right: 2%;
+    border: none;
+    border-radius: 20px;
+    padding: 1%;
+    gap: 10px; 
 }
 
-.imgCorpo14, .imgCorpo142{
-    width: calc(500px + 5vw);
-    height: auto;
-    padding: 2%;
-}
 
 
 /*CORPO 15 -BIBLIOTECA*/

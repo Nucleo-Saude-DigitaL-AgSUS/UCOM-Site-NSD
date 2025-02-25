@@ -91,6 +91,7 @@
     </div>
 <!--FIM DO CORPO 1-->
 
+
 <!--CORPO 2 - CONHEÇA O NSD-->
     <div id="Corpo2">
         <h1 class="tituloC2">  Núcleo de Saúde Digital
@@ -104,9 +105,20 @@
         </div>
     </div>
 <!--FIM DO CORPO 2-->
-    <!--Acessibilidade-->
-    <button id="custom-accessibility-button">Acessibilidade</button>
+    <!--Acessibilidade
+    <button id="custom-accessibility-button">Acessibilidade</button> -->
 
+    <!--VLIBRAS-->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
   
     <!-- ABA DO CHAT - SUSito-->
     <button id="chatButton">Chat</button>  
@@ -126,11 +138,11 @@
 
 <!--CORPO 3 - SUBSTITUIÇÃO TEMPORÁRIA DE MÉDICOS VIA TELESSAÚDE-->
     <div id="Corpo3">
-        <h1 class="tituloC3">Substituição Temporária de profissionais Médicos via Telessaúde </h1>
         <div id="div2C3">
             <img class="barralateralImg" src="Imagens/Imagemcorpo2.png" alt="Imagem"> 
             <img class="imagemC3" src="Imagens/Corpo2.png" alt="Imagem">
              <div id="div3C3">
+                <h1 class="tituloC3">Substituição Temporária de profissionais Médicos via Telessaúde </h1>
                 <p class="textoCorpo3"> Essa é uma das ofertas do NSD. O serviço visa apoiar as equipes de Saúde da Família em situações de vacância temporária, especialmente nos casos em que médicos(as) vinculados(as) aos programas federais de provimento estejam em licença-maternidade ou licença de saúde superiores a 30 dias, garantindo, assim, a continuidade do cuidado à população.</p>
                 <ul class="botaoCorpo3">
                     <li><a class="custom-btn" href="#Corpo6Ancora">Sou Gestor</a></li> 
@@ -178,7 +190,7 @@
                 <button type="button" class="btn btn-primary btnC5"><b>Em breve</b> <br>
                     Usuários satisfeitos</button>
                 <button type="button" class="btn btn-primary btnC5"><b>Em breve</b> <br>
-                    Demandas resolvidas
+                    Resolutividade
                 </button>
             </div>
         </div>
@@ -202,8 +214,7 @@
             <ul>
                 <li>
                     <img class="imgCorpo7" src="Corpo Sou Gestor/PerGestor1.png" alt="PGestor">
-                    <div class="textoExplicativoCorpo7"> O serviço de teleconsulta do NSD é totalmente gratuito para o
-                        seu município, garantindo acesso a soluções inovadoras sem comprometer o orçamento municipal.
+                    <div class="textoExplicativoCorpo7"> O serviço de teleconsulta do NSD é oferecido sem custo para o município, pois seu financiamento já está garantido pelo Ministério da Saúde por meio do Contrato de Gestão firmado com a AgSUS. Isso significa que a gestão municipal não precisa arcar com nenhuma despesa para a implementação ou manutenção do serviço.
                     </div>
                 </li>
                 <li>
@@ -233,10 +244,16 @@
                 <h1 class="tituloC7flip">Descubra quais os critérios seu município deve possuir para receber a teleconsulta do NSD</h1>
                 <div class="flipper">
                     <div class="front">Clique aqui e Descubra!</div>
-                        <div class="back"> <p class="textoC7flip"> <b>Infraestrutura:</b> Sala privativa, equipamentos médicos, computador, telefone e internet de 30 Mbps+. <br>
-                        <b>Apoio Técnico:</b> Equipe eSF completa e responsável técnico na unidade. <br>
-                        <b>Gestão:</b> Uso do e-SUS PEC APS (versão 5.3+), assinatura digital aceita e rede de apoio local. <br>
-                        <b>Encaminhamentos:</b> Fluxos definidos para exames, consultas presenciais e emergências.</p>
+                        <div class="back"> <p class="textoC7flip"> <i class="fa-solid fa-square" id="iFliper1"></i> O município possuir profissionais dos programas de provimento médico federal, 
+                            que esteja em licença-maternidade ou licença de saúde de no mínimo 15 dias.
+                    Além de demonstrar interesse na substituição temporária via Telessaúde. <br>
+                            <i class="fa-solid fa-square" id="iFliper1"></i> Uso do e-SUS PEC APS (versão 5.3+), conexão de internet estável, assinatura digital aceita e rede de apoio local. <br>
+                </p> <br>
+                        <p class="textoC7flip"> <i class="fa-solid fa-triangle-exclamation" id="iFliper2"></i> <b>Prioridade:</b> Municípios em regiões vulneráveis, com menor Índice de  Equidade e Dimensionamento (IED) e 
+                            Município com profissional com maior período restante de afastamento previsto, priorizando períodos superiores a 45 dias.
+                        </p>
+                        
+                        
                     </div>
                 </div>
             </div> 
@@ -249,7 +266,8 @@
     <div id="Corpo8">
         <div class="corpo8E">
             <h1 class="tituloC8E"> Veja como funciona nossa teleconsulta médica na UBS</h1>
-            <p class="textoC8E"> Um profissional da eSF realizará seu acolhimento e acompanhará você. Seu Médico de Família e Comunidade estará do outro lado da tela, preparado para atender suas demandas. Com base nas suas queixas, o médico fará perguntas, analisará sua situação e indicará os procedimentos necessários, como exames, prescrições de medicamentos, vacinas ou encaminhamentos para tratamentos específicos. </p>
+            <p class="textoC8E"> Um profissional da eSF realizará seu acolhimento e acompanhará você. Seu Médico de Família e Comunidade estará do outro lado da tela, preparado para atender suas demandas. 
+                Com base nas suas queixas, o médico fará perguntas, analisará sua situação e indicará os procedimentos necessários, como exames, prescrições de medicamentos, vacinas ou encaminhamentos para tratamentos específicos. </p>
         </div>
         <div class="corpo8D"> 
             <h2 class="tituloC8D"> Principais Dúvidas</h2>
@@ -453,7 +471,6 @@
             <p class="pCorpo11E"> <i class="fa-solid fa-right-to-bracket"></i> 15 UBS em 11 municípios </p>
             <p class="pCorpo11E"> <i class="fa-solid fa-right-to-bracket"></i> As Teleconsultas impactaram positivamente a saúde local</p>
             <p class="pCorpo11E"> <i class="fa-solid fa-right-to-bracket"></i> Transforme o acesso à saúde em seu município com Saúde Digital</p>
-            <a class="custom-btn11" href="#Corpo11Ancora">Notícias</a>
         </div>
         <div class="corpo11D">
             <div class="resultadosC11D">
@@ -497,21 +514,23 @@
 
 
 <!--CORPO 14 - Noticias-->
-    <h1 class="tituloCorpo14" id="tituloCorpo14">Notícias</h1>
-    <div id="Corpo14" class="container text-center">
-        <div class="row">
-            <div class=" col noticia1">
-                <p>Confira a matéria que saiu na mídia sobre a UBS Paissandu, localizada em Santarém no Pará.</p> 
-                <a href="https://ubsmaisdigital.com.br/saiu-na-midia/" target="_blank">Leia mais</a>
-                <img src="Imagens/Noticia-1.jpg" alt="">
-            </div>
-            <div class=" col noticia2">
-                <p>Atendimento domiciliar com uso de tecnologia modificou o curso de vida de uma usuária do SUS.</p> 
-                <a href="https://ubsmaisdigital.com.br/esf-de-paissandu-modificou-o-cursode-vida-de-uma-usuaria-do-sus/" target="_blank">Leia mais</a>
-                <img src="Imagens/Noticia-2.jpg" alt="">
-            </div>
+<h1 class="tituloCorpo14" id="tituloCorpo14">Notícias</h1>
+<div id="Corpo14" class="container text-center">
+    <div class="row gy-5 gx-3"> 
+        <div class="col c14Noticias">
+            <p> Atendimento domiciliar com uso de tecnologia modificou o curso de vida de uma usuária do SUS.</p>
+            <a href="https://ubsmaisdigital.com.br/saiu-na-midia/" target="_blank">
+            <img class="imgCorpo14" src="Imagens/Noticia-1.png" alt="Noticia">
+            </a>
+        </div>
+        <div class="col c14Noticias">
+            <p>Confira a matéria que saiu na mídia sobre a UBS Paissandu, localizada em Santarém no Pará.</p>
+            <a href="https://ubsmaisdigital.com.br/esf-de-paissandu-modificou-o-cursode-vida-de-uma-usuaria-do-sus/" target="_blank">
+            <img class="imgCorpo142" src="Imagens/Noticia-2.png" alt="Noticia2">
+            </a>
         </div>
     </div>
+</div>
 <!--FIM DO CORPO 14-->
 
 <!--CORPO 15 - Biblioteca-->
@@ -525,7 +544,6 @@
             <ul>
                 <li> <a class="btnbiblioteca" href="google.com"> Protocolos Assistenciais</a> </li>
                 <li> <a class="btnbiblioteca" href="google.com"> Guia de Teleconsulta</a> </li>
-                <li> <a class="btnbiblioteca" href="google.com"> Nota Técnica</a> </li>
                 <li> <a class="btnbiblioteca" href="google.com"> Carteira de Serviços</a> </li>
                 <li> <a class="btnbiblioteca" href="google.com"> Outros Materiais</a> </li>
             </ul>
