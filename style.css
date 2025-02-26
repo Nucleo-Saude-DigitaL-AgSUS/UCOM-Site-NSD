@@ -1296,7 +1296,10 @@ ul li img {
     gap: 10px; 
 }
 
-
+.imgLinha{
+    height: 150px;
+    margin-top: 25%;
+}
 
 /*CORPO 15 -BIBLIOTECA*/
 #Corpo15{
@@ -1432,7 +1435,11 @@ footer{
     margin-top: 7%;
     text-align: center;
 }
-
+.textoRodape{
+    text-align: center;
+    color: #0073e6;
+    font-weight: bold;
+}
 .texto1Rodape {
     font-size: 0.7rem;
     text-align: center;
