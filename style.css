@@ -14,8 +14,10 @@
 }
 
 body, html {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0% 10% 0% 10%;
+    font-family: var(--font-primary);
+    max-width: 80vw;
+    margin: auto;
+    color: var(--text-color);
 }
 
 header {
@@ -25,15 +27,20 @@ header {
     display: flex;
     align-items: center;
     justify-content:space-around;
-    padding: 10px 5%;
+    padding: 50px 5%;
     border-radius: 0 0 30px 30px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    height: 140px;
 }
 
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
 
 .navbar {
     display: flex;
@@ -41,12 +48,19 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    padding-top: 4%;
+}
+
+.logo-container {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     max-width: 100%;
     height: auto;
-    width: 120px;
+    margin-left: 25%;
 }
 
 @media (max-width: 768px) {
@@ -71,12 +85,8 @@ header {
 .navbar .nav-link,
 .dropdown .btn-secondary {
     font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
     color: #fff;
-    padding: 20px 15px;
-    white-space: nowrap;
-    flex: 1;
+    padding: 10px 12px;
     text-align: center;
 }
 
@@ -223,7 +233,7 @@ img {
     grid-auto-flow: column;
     columns: center;
     grid-template-columns: 60% 40%;
-    padding-top: 10%;
+    padding-top: calc(120px + 5vh);
 }
 .tituloC1{
     font-size: 4rem;
@@ -326,136 +336,146 @@ img {
 
 
 /*CORPO 2 - CONHEÇA O NSD*/
-#Corpo2{
-    padding-top: 3%;
-}
-.tituloC2{
-    margin-top: 3%;
+.corpo2 {
+    padding-top: 5%;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.titulo2C2{
-    margin-top: 2%;
-    font-family: "Open Sans";
-    font-weight: lighter;
+.subtitulo-c2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #00a79d;
     font-style: italic;
+    margin-bottom: 10px;    
 }
 
-.div2C2{
+.conteudo-c2 {
     display: grid;
-    grid-auto-flow: column;
-    columns: center;
-    gap: 2%;
-    overflow: visible; 
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5%;
+    align-items: center;
     position: relative;
-    grid-template-columns:  20% 30% 50%;
+    margin-top: -20px !important;
 }
 
-.textoC2{
-    justify-content: center;
-    overflow: visible;
-    position: relative;
-    top: 100px; 
+
+.texto-c2 {
+    text-align: justify;
+    align-self: start;
+    margin-top: 160px;
+    padding: 0;
 }
 
-.logoC2{
-    width: calc(500px + 5vw); 
+
+img {
+    max-width: 100%;
     height: auto;
-    overflow: visible;
-    position: relative;
-    top: -90px;
-    z-index: 10;
 }
 
-.imgSusito{
-    margin-top: 35%;
+
+.imagem-susete {
+    align-self: start;
+    margin-left: 25%;
+    height: 70%;
+}
+
+
+.logo-c2 {
+    max-width: 500px; 
+    width: 40vw;
+    height: auto;
+    z-index: 10;
+    top: -180px;
+    position: relative;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo-c2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .texto-c2 {
+        padding-top: 1rem;
+    }
 }
 
 
 /* CORPO 3 - SUBSTITUIÇÃO TEMPORÁRIA DE MÉDICOS VIA TELESSAÚDE*/
-#Corpo3{
-    gap:3%;
-    padding-top: 3%;
-}
 
-.tituloC3{
-    color:  #00a79d;
-    margin: 0% 0% 0% 15%;
-}
-
-#div2C3{
+.corpo3__container {
     display: grid;
-    grid-auto-flow: column;
-    columns: center;
-    gap: 2%;
     grid-template-columns: 10% 30% auto;
-    position: relative; 
+    gap: 2%;
+    align-items: center;
+    position: relative;
 }
 
-.textoCorpo3{
-    max-width: 1200px; 
-    margin: 5% 0% 0% 20%;
+.corpo3__title {
+    color: #00a79d;
+    margin-left: 15%;
 }
 
-.imagemC3{
+.corpo3__text {
+    max-width: 1200px;
+    margin: 5% 0 0 20%;
+}
+
+.corpo3__main-image {
     width: calc(800px + 5vw);
-    height: auto;
     margin-left: 35%;
 }
-#div3C3{
+
+.corpo3__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
+    text-align: left;
+    margin-left: 5%;
 }
 
-.barralateralImg{
-    height: 650px;
-    width: 100px;
-    max-width: 100px;
+.corpo3__sidebar-image {
+    height: 500px;
+    width: 80px;
     margin-left: 85%;
 }
 
-/*Botões do corpo 3*/
-.botaoCorpo3 {
-    display: grid;
-    grid-auto-flow: column;
-    columns: center; 
-    gap:8%;
-    white-space: nowrap;
+.corpo3__buttons {
+    display: flex;
+    gap: 10px;
     padding-top: 10%;
+    margin-left: 15%;
+    list-style: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-.botaoCorpo3 li {
-    display: inline-block; 
-}
-.custom-btn {
-    width: calc(500px + 5vw);
-    height: auto;
+.btn_c3 {
+    width: calc(80px + 5vw);
     text-align: center;
-    text-decoration: none;
-    font-size: 1.5rem; 
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
+    padding: 3%;
     border: 1px solid #fff;
     background-color: #00a79d;
     color: #fff;
     text-shadow: 4px 4px 5px #4a4a4a;
     border-radius: 25px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    padding: 8%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
-.custom-btn:hover{
-    color: #fff !important;
-    background-color: #016185 !important;
-    border-color:#00a79d !important;
-    box-shadow: 0 0 35px #fed433; 
-    transform: translateY(-3px); 
+.btn--primary:hover {
+    background-color: #016185;
+    box-shadow: 0 0 35px #fed433;
+    transform: translateY(-3px);
 }
 
-.btn-outline-primary:active {
-    transform: translateY(2px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+.btn--primary:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -535,60 +555,85 @@ img {
 
 
 /*CORPO 5 - O SERVIÇO PELO BRASIL*/
-.tituloC5 {
-    padding-top: 5%;
-    color: #070606;
-}
-
-#Corpo5 {
+.onde-atuamos {
     display: grid;
     grid-auto-flow: column;
     columns: center;
     grid-template-columns: 60% 40%;
     gap: 1%;
     margin-top: 5%;
+
 }
-.corpo5E{
+
+.onde-atuamos__conteudo {
+    flex: 1;
+    padding: 2%;
+    margin-top: 10%;
+}
+
+.onde-atuamos__titulo {
+    color: #070606;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.onde-atuamos__texto {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.onde-atuamos__botoes {
     display: flex;
-    flex-direction: column;
-    columns: center;
-}
-.tituloC5{
-    text-align: justify;
-
-}
-.textoC5 {
-    padding-top: 3%;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.mapadoBrasil {
-    position: relative;
-    width: calc(800px + 5vw);
-    height: auto;
-    border: 0px solid #ccc;
-}
-.botoesC5{
-    display: grid;
-    grid-auto-flow: column;
-    columns: center;
-    padding-top: 7%;
-    gap: 3%;
-}
-.btnC5{
-    width: calc(250px + 5vw);
-    height: 250px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.8rem !important; 
+.onde-atuamos__botao {
+    flex: 1;
+    min-width: 200px;
+    height: 200px;
+    padding: 1rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    border: none !important;
-    background-color: #fe5558!important;
+    border: none;
+    background-color: #fe5558;
     color: #fff;
-    text-shadow: 4px 4px 5px #4a4a4a;
-    border-radius: 45px !important;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    padding: 8%;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.onde-atuamos__botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px #fed433;
+}
+
+.onde-atuamos__imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.onde-atuamos__imagem img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .onde-atuamos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .onde-atuamos__imagem {
+        margin-top: 2rem;
+    }
 }
 
 /*CORPO 6 - FLUXO DE ATENDIMENTO*/
@@ -622,7 +667,7 @@ img {
     columns: center;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 1%;
-    margin: 3% 15% 0% 5%;
+    margin: 3% 5% 0% 5%;
 }
 
 .imgCorpo7{
@@ -754,10 +799,11 @@ img {
 
 #Corpo8{
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    columns: center;
-    gap: 3%;
-    margin: 3% 10% 0% 5%;
+    grid-template-columns: 50% 50%; 
+    gap: 5%;
+    align-items: start;
+    justify-content: space-between; /* Mantém equilíbrio entre os elementos */
+    margin: 3% 5% 0% 5%;
 }
 
 .tituloC8E{
@@ -766,13 +812,15 @@ img {
 }
 
 .corpo8D{
-    margin-top: 2%;
+    justify-self: right !important; 
+    width: 100%;
+    margin-left: 20%;
 }
 
 .tituloC8D{
     font-size: 2.5rem; 
     text-align: center;
-    margin-right: 25%;
+    padding-right: 25%;
 }
 
 ul {
@@ -837,7 +885,7 @@ ul li img {
 #Corpo9{
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
-    margin: 3% 10% 0% 5%;
+    margin: 3% 5% 0% 5%;
 }
 
 .corpo9E{
@@ -892,7 +940,7 @@ ul li img {
     align-items: center;
     text-align: center;
     border-radius: 20%;
-    margin: 10% 10% 15% 0%;
+    margin: 10% 5% 15% 0%;
 }
 .imgC9D{
     width: calc(200px + 5vw);
@@ -935,7 +983,7 @@ ul li img {
     display: grid;
     grid-auto-flow: column;
     columns: center;
-    margin: 0% 15% 0% 5%;
+    margin: 0% 5% 0% 5%;
     border-radius: 10%;   
 }
 
@@ -957,6 +1005,7 @@ ul li img {
 
 .btnConselhos{
     border: none !important;
+    background-color: transparent;
 }
 
 .imgConselhos{
@@ -984,6 +1033,7 @@ ul li img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0% 5%;
     background-image: linear-gradient(to right, #fff 30%, #e5e5e5 70%);
 }
 
