@@ -1,0 +1,140 @@
+.containerTopo{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.designContainerTopo{
+    width: 280px;
+    height: 80px;
+    background-color: #e5e5e5;
+    font-family: 'Montserrat', sans-serif;
+    color: #016185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.designContainerTopo img {
+    max-width: 140%; 
+    max-height: 140%;  
+    object-fit: contain; 
+}
+
+.retanguloComImagem {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemDeFundo {
+     background-image: url('Imagens/img-com-prt.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.textoSobreImagem {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;  
+    color: #016185;
+    text-align: center;
+    padding: 0 200px;
+    z-index: 1;
+}
+
+.saibaMaisBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #016185;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.saibaMaisBtn:hover {
+    background-color: #0073e6;
+}
+
+.barrasContainer{
+    display: flex;
+    width: 100%;
+}
+
+.designLinha{
+    flex: 1;
+    width: 290px;
+    height: 80px;
+}
+
+.barrasContainerRodape{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.designLinhaRodape{
+    flex: 1;
+    width: 330px;
+    height: 15px;
+}
+
+.designRodape{
+    flex: 1;
+    width: 290px;
+    height: 200px;
+}
+
+.tituloInicio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #016185;
+    margin-top: 100px;
+    margin-left: 60px;
+
+}
+
+.textoInicio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #016185;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 55%;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.containerInicioEsq {
+    width: 80%;
+    position: relative;
+}
+
+.containerInicioEsq img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
