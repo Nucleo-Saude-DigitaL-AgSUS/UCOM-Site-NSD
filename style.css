@@ -11,13 +11,16 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 html,
 body {
-  margin: 0% 5%;
   font-family: var(--font-primary);
+  margin: 0;
   color: var(--text-color);
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img,
@@ -67,11 +70,12 @@ header {
 }
 
 .logo {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
   margin-left: 25%;
   margin-right: 15%;
   padding: 8%;
+  width: 150%;
 }
 
 #navbarNav {
@@ -89,6 +93,7 @@ header {
   color: #28284d;
   padding: 10px 12px;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .dropdown-menu {
@@ -160,7 +165,8 @@ p {
 .corpo2 {
   padding-top: 15%;
   padding-bottom: 0;
-  margin-bottom: -20px;
+  max-height: 900px;
+  margin: 0% 5%;
 }
 
 .titulo-c2 {
@@ -193,8 +199,8 @@ img {
 .imagem-susete {
   align-self: start;
   margin-left: 25%;
-  height: 70%;
-  margin-bottom: 0;
+  height: 60%;
+  margin-top: 4%;
 }
 
 .logo-c2 {
@@ -215,6 +221,7 @@ img {
   gap: 5%;
   align-items: start;
   padding: 40px;
+  margin: 0% 5%;
 }
 
 .corpo3__main-image {
@@ -244,22 +251,23 @@ img {
 
 .corpo3__buttons {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: 0;
-
-  list-style: none;
-  align-items: stretch;
-  width: 100%;
-  max-width: 300px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .btn_c3 {
   width: 100%;
   font-size: 1.2rem;
-  padding: 12px 20px;
   text-decoration: none;
   box-sizing: border-box;
+  flex: 1;
+  min-width: 200px;
+  height: 100px;
+  padding-top: 18%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* CORPO 4 - CARROSSEL DA EQUIPE */
@@ -269,9 +277,8 @@ img {
 
 #carrosselEquipe {
   position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
+  margin: 0% 5%;
+  width: 90%;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -343,13 +350,13 @@ img {
   columns: center;
   grid-template-columns: 60% 40%;
   gap: 1%;
-  margin-top: 5%;
+  margin: 5% 5% 0% 5%;
 }
 
 .onde-atuamos__conteudo {
   flex: 1;
   padding: 2%;
-  margin-top: 10%;
+  margin: 10% 5% 0% 5%;
 }
 
 .onde-atuamos__titulo {
@@ -410,6 +417,7 @@ img {
   align-items: center;
   padding-top: 5%;
   color: #070606;
+  margin: 0% 5%;
 }
 
 .tituloC6 {
@@ -437,6 +445,7 @@ img {
   columns: center;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 1%;
+  margin: 0% 5%;
 }
 
 .imgCorpo7 {
@@ -574,6 +583,7 @@ img {
   gap: 5%;
   align-items: start;
   justify-content: space-between;
+  margin: 0% 5%;
 }
 
 .tituloC8E {
@@ -653,6 +663,7 @@ ul li img {
 #Corpo9 {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
+  margin: 0% 5%;
 }
 
 .corpo9E {
@@ -735,7 +746,7 @@ ul li img {
   display: grid;
   grid-auto-flow: column;
   columns: center;
-  margin: 0% 5% 0% 5%;
+  margin: 0% 5%;
   border-radius: 10%;
 }
 
@@ -749,6 +760,7 @@ ul li img {
   width: 100%;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #fff 30%, #e5e5e5 70%);
+  margin: 0% 5%;
 }
 
 .tituloC9E2 {
@@ -857,6 +869,7 @@ ul li img {
 
 .Corpo10 {
   padding-top: 10%;
+  margin: 0% 5%;
 }
 .tituloCorpo10A {
   text-align: justify;
@@ -917,7 +930,7 @@ ul li img {
 
 /* CORPO 11 - RESULTADOS PILOTO*/
 .tituloCorpo11 {
-  margin-top: 3%;
+  margin: 3% 5% 0% 5%;
   margin-bottom: 1%;
 }
 
@@ -927,7 +940,6 @@ ul li img {
   columns: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 4%;
-  margin: 1% 10% 0% 15%;
 }
 
 .corpo11E {
@@ -1012,7 +1024,7 @@ ul li img {
   flex-direction: column;
   gap: 10%;
   align-items: left;
-  margin: 5% 10% 0% 10%;
+  margin: 0% 5%;
 }
 
 .tituloCorpo12 {
@@ -1023,39 +1035,21 @@ ul li img {
   padding-top: 5%;
 }
 
-.barrasContainer {
-  display: flex;
-  width: 100%;
-  margin-top: 10px;
-}
-.designLinha {
-  flex: 1;
-  width: 330px;
-  height: 15px;
-}
-
 .tituloCorpo12v2 {
   font-family: "Montserrat", sans-serif;
-  color: #016185;
+  color: #4a4a4a;
   font-size: 1.5rem !important;
   text-align: left !important;
-  margin-top: 60px;
+  margin: 3% 5% 0% 5%;
 }
 
-.hashtags {
-  background-color: #ffbd59;
-  color: #130202;
-  padding: 1%;
-  border-radius: 10px;
-  margin-bottom: 2%;
-}
 .textoC12 {
   font-family: "Montserrat", sans-serif;
   width: 1000px;
-  color: #016185;
+  color: #4a4a4a;
   font-size: 1.5rem;
   text-align: justify;
-  margin-bottom: 70px;
+  margin: 3% 5% 0% 5%;
 }
 .imgCorpo12 {
   width: calc(300px + 5vw);
@@ -1084,19 +1078,34 @@ ul li img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0% 10% 0% 10%;
+  max-width: 100%;
+  margin: 0% 5%;
 }
 .c13Noticias {
-  margin-right: 2%;
   border: none;
   border-radius: 20px;
   padding: 1%;
-  gap: 10px;
+  gap: 50px;
 }
 
-.imgLinha {
-  height: 150px;
-  margin-top: 25%;
+#Corpo13 .row {
+  margin: 0;
+  padding: 0;
+}
+
+.c13Noticias {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.pCorpo13,
+.pCorpo132 {
+  margin: 0% 5% 0% 5%;
+  width: 80%;
+}
+
+.imgCorpo132 {
+  margin-right: 7%;
 }
 
 /* CORPO 14 */
@@ -1104,9 +1113,9 @@ ul li img {
   display: grid;
   grid-auto-flow: column;
   columns: center;
-  margin: 5% 10% 0% 15%;
   gap: 1%;
   position: relative;
+  margin: 0% 5%;
 }
 
 .imgTituloCorpo14 {
@@ -1124,29 +1133,12 @@ ul li img {
 }
 
 .corpo14D {
-  padding-top: 20%;
-  margin-top: 10%;
+  width: 100%;
+  margin: 0% 5%;
 }
 
 .corpo14D ul li {
-  margin-top: 20%;
-}
-
-.overlayBiblioteca {
-  position: absolute;
-  top: 10%;
-  left: 80%;
-  width: 20%;
-  height: 70%;
-  background-color: rgba(1, 97, 133, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #070606;
-  font-size: 2rem;
-  font-style: italic;
-  z-index: 10;
-  border-radius: 25px;
+  margin-top: 5%;
 }
 
 /* CORPO 15 */
@@ -1156,7 +1148,7 @@ ul li img {
   columns: center;
   grid-template-columns: 50% 50% 50%;
   gap: 5%;
-  margin: 5% 10% 0% 15%;
+  margin: 10% 5% 0% 5%;
 }
 .corpo152 {
   display: flex;
@@ -1218,40 +1210,27 @@ ul li img {
   height: auto;
 }
 
-/* RODAPÉ 
-
-CONFORME ORIENTAÇÃO DA UCOM, DEVE SER O MESMO DA AGÊNCIA
-
-*/
-
-@keyframes fadeInGlowLoop {
-  0% {
-    opacity: 0;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0);
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  }
-  100% {
-    opacity: 0.6;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-  }
+/* RODAPÉ */
+.barrasContainer {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+.designLinha {
+  flex: 1;
+  width: 100%;
+  height: 15px;
 }
 
-.imgInstituicoes {
-  text-align: center;
-  max-width: 70%;
-}
-.imgRodape {
+footer {
   width: 100vw;
-  height: auto;
-  display: block;
-  margin: 0%;
-  padding: 0%;
-  background-size: 400% 400%;
+  min-width: 100%;
+  margin: 0% !important;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-
 /*ABA DO CHAT - SUSito*/
 @keyframes gradientMove {
   0% {

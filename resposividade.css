@@ -194,8 +194,8 @@
   .btn_c3 {
     width: 100%;
     max-width: 300px;
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 30px 20px;
+    font-size: 1.2rem;
   }
 
   /* CORPO 4 - CARROSSEL DA EQUIPE */
@@ -715,7 +715,7 @@
   }
 
   .imgBiblioteca {
-    display: none;
+    width: 100%;
   }
 
   .textoCorpo14 {
@@ -740,15 +740,13 @@
     margin: 0px 0;
   }
 
-  .btnbiblioteca:hover {
-    background-color: #016185;
+  .docs {
+    text-align: center;
+    align-items: center;
   }
 
-  .overlayBiblioteca {
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 50%;
+  .btnbiblioteca:hover {
+    background-color: #016185;
   }
 
   /* CORPO 15 - FINAL */
