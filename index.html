@@ -18,7 +18,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="resposividade.css" />
+  <link rel="stylesheet" href="responsividade.css" />
   <link rel="icon" type="image/png" href="LogoCrua.png" />
   <title>Núcleo de Saúde Digital</title>
 </head>
@@ -151,7 +151,7 @@
       <div class="conteudo-c2">
         <img
           class="imagem-susete"
-          src="Imagens/SUSete.png"
+          src="Imagens/SUSete.jpeg"
           alt="Mascote Susete" />
         <p class="texto-c2">
           O Núcleo de Saúde Digital (NSD) é uma iniciativa da AgSUS criada para
@@ -894,34 +894,62 @@
   </div>
 
     <div class="corpo14D d-flex">
-      <div class="col-6">
-        <img
-        class="imgBiblioteca"
-        src="Corpo 12 Biblioteca/Imagem Biblioteca.png"
-        alt="Biblioteca" />
-      </div>
-      <div class="col-6 space-between">
-        <ul>
-          <li>
-            <a class="btnbiblioteca botao" href="">
-              Protocolos Assistenciais</a>
-          </li>
-          <li>
-            <a class="btnbiblioteca botao" href="">
-              Guia de Teleconsulta</a>
-          </li>
-          <li>
-            <a class="btnbiblioteca botao" href="">
-              Carteira de Serviços</a>
-          </li>
-          <li>
-            <a class="btnbiblioteca botao" href="">
-              Outros Materiais</a>
-          </li>
+  <div class="col-6">
+    <img
+      class="imgBiblioteca"
+      src="Corpo 12 Biblioteca/Imagem Biblioteca.png"
+      alt="Biblioteca"
+    />
+  </div>
+
+  <div class="col-6 space-between">
+    <ul>
+      <!-- Dropdown Protocolos Assistenciais -->
+      <li class="dropdown">
+        <a class="btnbiblioteca botao dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Protocolos Assistenciais
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Diabetes Mellitus II - VERSÃO PRELIMINAR.pdf" target="_blank">Diabetes Mellitus II </a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Hipertensão Arterial Sistêmcia - VERSÃO PRELIMINAR.pdf" target="_blank">Hipertensão Arterial</a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Pré-Natal de Risco Habitual - VERSÃO PRELIMINAR.pdf" target="_blank">Pré-Natal</a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Puericultura - VERSÃO PRELIMINAR.pdf" target="_blank">Puericultura</a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Saúde Digital - Versao_Preliminar.pdf" target="_blank">Saúde Digital</a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Protocolos Assistenciais/E-book Dúvidas comuns na APS - Versao_Preliminar.pdf" target="_blank">Dúvida comuns na APS</a></li>
         </ul>
-      </div>
-    </div>
-  
+      </li>
+
+      <!-- Guia de Teleconsulta -->
+      <li>
+        <a class="btnbiblioteca botao" href="Arquivos para biblioteca/Guia de Teleconsulta/Guia de Teleconsulta_Oficial - Versao_Preliminar.pdf" target="_blank">
+          Guia de Teleconsulta
+        </a>
+      </li>
+
+      <!-- Dropdown Carteira de Serviços -->
+      <li class="dropdown">
+        <a class="btnbiblioteca botao dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Carteira de Serviços
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Carteira de serviços/Carteira de Serviços Profissional e Gestor - Versao_Preliminar_Ficha_Catalografica.pdf" target="_blank">Carteira para Profissionais e Gestores</a></li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Carteira de serviços/Carteira de Serviços Usuários População - Versao_Preliminar_Ficha_Catalografica.pdf" target="_blank">Carteira para Usuários</a></li>
+        </ul>
+      </li>
+
+      <!-- Outros Materiais -->
+      <li class="dropdown">
+        <a class="btnbiblioteca botao dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Outros Materiais </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Outros Materiais/FAQ Gestores - Perguntas Frequentes  (1).pdf" target="_blank"> FAQ Gestores </a> </li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Outros Materiais/FAQ Médicos - Perguntas Frequentes.pdf" target="_blank"> FAQ Médicos </a> </li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Outros Materiais/FAQ Profissionais - Perguntas Frequentes  (1).pdf" target="_blank"> FAQ Profissionais </a> </li>
+          <li><a class="dropdown-item" href="Arquivos para biblioteca/Outros Materiais/FAQ Usuários - Perguntas Frequentes  (1).pdf" target="_blank"> FAQ Usuários </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 
   <!--CORPO 15 - FINAL-->
   <div id="Corpo15">
@@ -972,9 +1000,7 @@
     <div class="designLinha" style="background-color: #71d285"></div>
   </div>
 
-  <!--RODAPÉ
-    CONFORME SOLICITAÇÃO DA UCOM, DEVE SER O MESMO DO DA AGÊNCIA
-    -->
+  <!--RODAPÉ-->
   <footer class="container-fluid rodape-wrapper px 0" style="margin-bottom:0;background-color: #201f4e;">
     <div class="row pb-5 gx-0 mx-0" style="padding: 0px 0px 10px 0px;">
       <div class="col-md-3 mb-5 p-3">

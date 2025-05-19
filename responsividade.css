@@ -1,0 +1,1056 @@
+/* CELULARES */
+@media (min-width: 360px) and (max-width: 450px) {
+  header,
+  .navbar-nav,
+  .conteudo-c2,
+  .corpo3__container,
+  .corpo3__buttons,
+  #Corpo5,
+  .onde-atuamos__botoes {
+    flex-direction: column !important;
+    text-align: center !important;
+    margin: 0% 1%;
+  }
+  body {
+    position: relative;
+    margin: 0% 1%;
+  }
+  header {
+    flex-direction: row !important;
+    padding: 20px !important;
+    height: auto;
+  }
+
+  .container-fluid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbarNav {
+    display: none;
+    flex-direction: column;
+    background: #0dd4ac;
+    border-radius: 0 0 20px 20px;
+    width: 60%;
+    padding: 1rem;
+    margin-top: 10px;
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #navbarNav.show {
+    display: flex !important;
+  }
+
+  .navbar-toggler {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    align-self: flex-end;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #fff;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .logo-container {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    max-width: 80px;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .botao {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .userway,
+  .uwy {
+    display: none !important;
+  }
+  /* CORPO 2 - CONHEÇA O NSD */
+
+  .corpo2 {
+    padding-top: 30%;
+  }
+
+  .titulo-c2 {
+    padding-bottom: 5%;
+    font-size: 1.2rem;
+  }
+  .conteudo-c2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .conteudo-c2 .imagem-susete,
+  .conteudo-c2 .logo-c2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .imagem-susete {
+    width: 30%;
+    max-width: 100px;
+    height: auto;
+  }
+
+  .logo-c2 {
+    width: 60%;
+    height: auto;
+    left: 35%;
+    top: 2%;
+    position: absolute;
+  }
+
+  .texto-c2 {
+    order: 2;
+    width: 100%;
+    text-align: justify;
+    padding: 0 15px;
+    margin: 5% 0% 10% 0%;
+    font-size: 1rem;
+  }
+
+  /* CORPO 3 - SUBSTITUIÇÃO TEMPORÁRIA DE MÉDICOS VIA TELESSAÚDE*/
+  .corpo3__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .corpo3__main-image {
+    object-fit: cover;
+    height: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .corpo3__title {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .corpo3__text {
+    width: 100%;
+    text-align: justify;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .corpo3__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  .btn_c3 {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px 20px;
+    font-size: 1.2rem;
+  }
+
+  /* CORPO 4 - CARROSSEL DA EQUIPE */
+  .tituloCarrossel,
+  .carrosselEquipe {
+    margin: 0%, 1%;
+  }
+
+  /* CORPO 5 - ONDE ATUAMOS*/
+  .onde-atuamos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "texto imagem"
+      "botoes imagem";
+    gap: 1rem;
+    align-items: start;
+    margin: 5% 0;
+    overflow: hidden;
+    position: relative;
+    padding: 10% 5%;
+  }
+
+  .onde-atuamos__conteudo {
+    grid-area: texto;
+    padding: 0 10px;
+    margin-top: 0;
+  }
+
+  .onde-atuamos__imagem {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translateX(-50%);
+    z-index: 0;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .onde-atuamos__imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+    border-radius: 0;
+  }
+
+  .onde-atuamos__botoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    columns: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    left: -5%;
+  }
+
+  .onde-atuamos__botao {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 100px;
+    max-width: 120px;
+    height: auto;
+    min-height: 80px;
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+
+  .onde-atuamos__titulo {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .onde-atuamos__texto {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  /* CORPO 7 - SOU GESTOR */
+  .tituloC7 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 15% 10px 2% 10px;
+  }
+
+  #Corpo7 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .corpo7E,
+  .corpo7D {
+    width: 100%;
+  }
+
+  .imgCorpo7 {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .textoExplicativoCorpo7 {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: static;
+    display: none;
+    opacity: 1;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .imgCorpo7:hover + .textoExplicativoCorpo7 {
+    display: block;
+  }
+
+  .tituloC7flip {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .flip-container {
+    margin: 0 auto 40px auto;
+    width: 100%;
+  }
+
+  .flipper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .front,
+  .back {
+    width: 100%;
+    margin: 0;
+  }
+
+  .textoC7flip {
+    font-size: 0.95rem;
+  }
+
+  /* CORPO 8 - SOU USUÁRIO */
+  .tituloC8 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 15% 10px 10px;
+  }
+
+  #Corpo8 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .corpo8E,
+  .corpo8D {
+    width: 100%;
+  }
+
+  .tituloC8E {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .textoC8E {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .corpo8D {
+    margin: 0 auto;
+  }
+
+  .tituloC8D {
+    font-size: 1.4rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  ul li img.botaoClicavel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textoExplicativo {
+    width: 100%;
+    left: 0;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    opacity: 1;
+    display: block;
+  }
+
+  /* CORPO 9 - SOU PROFISSIONAL */
+  .tituloC9 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 15% 10px 10px;
+  }
+
+  #Corpo9 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .corpo9E,
+  .corpo9D {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tituloC9E {
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+
+  .botaoClicavel {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .textoExplicativoC9 {
+    width: 100%;
+    left: 0;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+    display: block;
+    opacity: 1;
+  }
+
+  .imgC9D {
+    width: 70%;
+    max-width: 250px;
+    margin: 10px auto;
+  }
+
+  .tituloC9D {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .btnC9D {
+    font-size: 1rem;
+    margin: 10px 0 30px;
+    padding: 10px 20px;
+  }
+
+  #Corpo9E2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .corpo9E2,
+  .corpo9D2 {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-image: none;
+  }
+
+  .tituloC9E2,
+  .tituloLegislacoes {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .btnConselhos {
+    padding: 5px;
+  }
+
+  .imgConselhos {
+    max-width: 70px;
+    padding: 5px;
+  }
+
+  .legislacoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+  .legislacoes div {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 32%;
+  }
+
+  .imgBrasao {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nomeLegislacao {
+    font-size: 0.85rem;
+  }
+
+  /* CORPO 10 - NOSSA HISTÓRIA */
+  .Corpo10 {
+    padding-top: 5%;
+    margin: 0% 3%;
+  }
+
+  .tituloCorpo10A {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  #Corpo10A {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #Corpo10A p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  #video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+  }
+
+  .tituloCorpo10B {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .tituloCorpo10B h1 {
+    font-size: 1.5rem;
+  }
+
+  .tituloCorpo10B h2 {
+    font-size: 1.1rem;
+  }
+
+  #Corpo10B {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .imagemGraca,
+  .imagemArtur {
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .tituloGraca,
+  .tituloArtur {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .textoGraca,
+  .textoArtur {
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  /* CORPO 11 - RESULTADOS PILOTO */
+  .tituloCorpo11 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 10px 10px;
+  }
+
+  #Corpo11 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 10px;
+  }
+
+  .corpo11D {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .resultadosC11D {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .imgC11D {
+    width: 30%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #contagemC11D1,
+  #contagemC11D2,
+  #contagemC11D3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+
+  .pCorpo11D {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .corpo11E {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .pCorpo11E {
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+
+  .pCorpo11E i {
+    color: #0dd4ac;
+    margin-right: 8px;
+  }
+
+  /* CORPO 12 - COMUNIDADE DE PRÁTICAS */
+  #Corpo12 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 15% 5% 10% 5%;
+  }
+
+  .tituloCorpo12 {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+  }
+
+  .hashtags {
+    font-size: 1rem;
+    text-align: center;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .textoC12,
+  .textoC122 {
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .imgCorpo12 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .pCorpo13 {
+    font-size: 1rem;
+  }
+
+  /* CORPO 13 - NOTÍCIAS */
+  #Corpo13 {
+    margin: 16% 1% 0 1%;
+  }
+
+  /* CORPO 14 - BIBLIOTECA */
+  #Corpo14 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 10% 5%;
+  }
+
+  .imgTituloCorpo14 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imgBiblioteca {
+    width: 100%;
+  }
+
+  .textoCorpo14 {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px 0;
+  }
+
+  .corpo14D {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .corpo14D ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .corpo14D ul li {
+    margin: 0px 0;
+  }
+
+  .docs {
+    text-align: center;
+    align-items: center;
+  }
+
+  .btnbiblioteca:hover {
+    background-color: #016185;
+  }
+
+  /* CORPO 15 - FINAL */
+  #Corpo15 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0px;
+  }
+
+  .corpo152 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .tituloC15D {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .textoC15D {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .redesSociais {
+    text-align: center;
+    width: 100%;
+  }
+
+  .redesSociais h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .redesSociais div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .redesSociais img {
+    width: 40px;
+    height: auto;
+  }
+
+  .redesSociais p {
+    font-size: 1rem;
+  }
+
+  .imgRedesSociaisSUSito {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  /* CHAT SUSPENSO SUSITO */
+
+  #chatButton {
+    width: 50px;
+    height: 40px;
+    font-size: 0.8rem;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+  }
+
+  #susitoImage {
+    width: 70px;
+    height: 70px;
+    bottom: 90px;
+  }
+
+  .dialogBubble {
+    max-width: 90%;
+    right: 5%;
+    left: 5%;
+    font-size: 0.75rem;
+  }
+
+  .divbtn {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+/* TABLETES */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  header {
+    padding: 25px 5%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .logo {
+    max-width: 100px;
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  #navbarNav {
+    width: 50%;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+  }
+
+  /* CORPO 2 */
+  .conteudo-c2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto-c2 {
+    padding: 0 10px;
+  }
+
+  .imagem-susete {
+    width: 25%;
+  }
+
+  .logo-c2 {
+    width: 50%;
+  }
+
+  /* CORPO 3 */
+  .corpo3__container,
+  .corpo3__buttons {
+    flex-direction: column;
+  }
+
+  /* CORPO 5 */
+  .onde-atuamos {
+    padding: 5% 5%;
+  }
+
+  .onde-atuamos__imagem {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+
+  .onde-atuamos__botoes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .onde-atuamos__botao {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  /* CORPO 7, 8, 9 */
+  #Corpo7,
+  #Corpo8,
+  #Corpo9 {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .textoExplicativoCorpo7,
+  .textoExplicativo,
+  .textoExplicativoC9 {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .imgCorpo7,
+  .botaoClicavel {
+    width: 90%;
+  }
+
+  /* CORPO 10 */
+  #Corpo10A,
+  #Corpo10B {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  /* CORPO 11 */
+  #Corpo11 {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .corpo11D {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .resultadosC11D {
+    width: 30%;
+    text-align: center;
+  }
+
+  /* CORPO 12 */
+  #Corpo12 {
+    margin: 10% 5%;
+    align-items: center;
+  }
+
+  .textoC12 {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .imgCorpo12 {
+    max-width: 80%;
+  }
+
+  /* CORPO 14 */
+  #Corpo14 {
+    flex-direction: column;
+    margin: 10% 5%;
+    gap: 30px;
+  }
+
+  .corpo14D {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CORPO 15 */
+  #Corpo15 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 5% 10%;
+  }
+
+  /* CHAT SUSITO */
+  #chatButton {
+    width: 60px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  #susitoImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .dialogBubble {
+    max-width: 400px;
+    left: auto;
+    right: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .texto-c2 {
+    margin-top: 10%;
+    font-size: 1.3rem;
+  }
+
+  .logo-c2 {
+    position: relative;
+    top: -4%;
+  }
+  .corpo3__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .corpo3__buttons li {
+    flex: 1;
+  }
+
+  .btn_c3 {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .corpo3__text {
+    font-size: 1.3rem;
+  }
+
+  .onde-atuamos__botao {
+    min-width: 100px;
+    max-width: 200px;
+    height: 100px;
+  }
+
+  .overlayBiblioteca {
+    top: 15%;
+    left: 70%;
+    width: 30%;
+    height: 60%;
+  }
+}

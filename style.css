@@ -199,17 +199,18 @@ img {
 .imagem-susete {
   align-self: start;
   margin-left: 25%;
-  height: 60%;
+  height: 80%;
   margin-top: 4%;
 }
 
 .logo-c2 {
-  max-width: 500px;
+  max-width: 400px;
   width: 40vw;
   height: auto;
+  right: 0;
   z-index: 10;
-  top: -180px;
-  position: relative;
+  top: 10%;
+  position: absolute;
   margin-bottom: 0;
 }
 
