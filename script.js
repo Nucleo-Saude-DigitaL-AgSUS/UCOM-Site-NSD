@@ -1,3 +1,8 @@
+/** ========== FUNÇÃO DE REDIRECIONAMENTO (SUSITO) ========== */
+function redirectTo(url) {
+  window.location.href = url;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   /** ========== 1. CARROSSEL ========== */
   const carouselImages = document.querySelector(".carousel-images");
