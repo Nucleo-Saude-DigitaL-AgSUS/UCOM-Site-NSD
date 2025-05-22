@@ -1,5 +1,5 @@
 /* CELULARES */
-@media (min-width: 360px) and (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 450px) {
   header,
   .navbar-nav,
   .conteudo-c2,
@@ -25,6 +25,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .navbar-toggler, .navbar-collapse, .collapse {
+    background: #e5e5e5 !important;
+    margin-left: 35%;
+    font-size: 1rem;
+  }
+
+  .collapse a ul li {
+    font-size: 0.6rem !important;
+  }
+
+  .nav-link{
+    font-size: 1rem !important;
   }
 
   #navbarNav {
@@ -54,6 +68,7 @@
     right: 15px;
     top: 20px;
     color: #fff;
+    background: #fff;
   }
 
   .container-fluid {
@@ -132,7 +147,7 @@
     width: 60%;
     height: auto;
     left: 30%;
-    top: -5%;
+    top: -1%;
     position: absolute;
   }
 
@@ -192,10 +207,11 @@
   }
 
   .btn_c3 {
-    width: 100%;
+    width: 50%;
     max-width: 300px;
-    padding: 30px 20px;
+    padding: 20px 20px;
     font-size: 1.2rem;
+    height: 10%;
   }
 
   /* CORPO 4 - CARROSSEL DA EQUIPE */
@@ -655,11 +671,11 @@
 
   /* CORPO 12 - COMUNIDADE DE PRÁTICAS */
   #Corpo12 {
-    display: flex;
+   display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
-    align-items: center;
-    margin: 15% 5% 10% 5%;
+    margin: 10% 5%;
   }
 
   .tituloCorpo12 {
@@ -674,12 +690,11 @@
     width: 100%;
   }
 
-  .textoC12,
-  .textoC122 {
+  .textoC12{
     width: 100%;
     font-size: 1rem;
     text-align: justify;
-    padding: 0 10px;
+
   }
 
   .imgCorpo12 {
@@ -688,6 +703,10 @@
     height: auto;
     margin: 20px auto 0 auto;
     display: block;
+  }
+
+  .comunidade {
+    margin-right: 15% !important;
   }
 
   .pCorpo13 {
@@ -745,8 +764,13 @@
     align-items: center;
   }
 
+  .btnbiblioteca {
+    font-size: 0.7rem;
+  }
+
   .btnbiblioteca:hover {
     background-color: #016185;
+
   }
 
   /* CORPO 15 - FINAL */
@@ -936,6 +960,7 @@
   #Corpo10B {
     flex-direction: column;
     padding: 0 20px;
+    font-size: 1rem;
   }
 
   /* CORPO 11 */
@@ -957,19 +982,21 @@
   }
 
   /* CORPO 12 */
-  #Corpo12 {
-    margin: 10% 5%;
+  .comunidade {
     align-items: center;
   }
 
   .textoC12 {
-    width: 100%;
-    padding: 0 20px;
+    font-size: 1.2rem;
+    padding: 0 3%;
   }
-
   .imgCorpo12 {
     max-width: 80%;
   }
+
+  /* CORPO 13 */
+
+
 
   /* CORPO 14 */
   #Corpo14 {
@@ -1011,6 +1038,10 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
+  
+  body, html {
+    font-size: 1rem;
+  }
   .texto-c2 {
     margin-top: 10%;
     font-size: 1.3rem;
@@ -1020,9 +1051,23 @@
     position: relative;
     top: -4%;
   }
+  .navbar {
+    padding-left: 15%;
+  }
+
+  .nav-item, .nav-link a li {
+      font-size: 0.2rem;
+  }
+
+
+  .navbar .nav-link,
+.dropdown .btn-secondary {
+  font-size: 1.2rem;
+}
+  
   .corpo3__buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     justify-content: center;
     gap: 10px;
     max-width: 100%;
@@ -1033,13 +1078,17 @@
   }
 
   .btn_c3 {
-    width: 100%;
-    font-size: 0.8rem;
+    width: 5%;
+    height: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .corpo3__text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
+
 
   .onde-atuamos__botao {
     min-width: 100px;
@@ -1052,5 +1101,12 @@
     left: 70%;
     width: 30%;
     height: 60%;
+  }
+  #Corpo10A p {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 }
