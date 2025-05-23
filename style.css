@@ -278,8 +278,8 @@ img {
 
 #carrosselEquipe {
   position: relative;
-  margin: 0% 5%;
-  width: 90%;
+  margin: 0 auto;
+  width: 60%;
   overflow: hidden;
   border-radius: 10px;
 }

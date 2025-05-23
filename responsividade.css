@@ -220,6 +220,9 @@
     margin: 0%, 1%;
   }
 
+  #carrosselEquipe {
+  width: 90%;
+}
   /* CORPO 5 - ONDE ATUAMOS*/
   .onde-atuamos {
     display: grid;
@@ -993,10 +996,6 @@
   .imgCorpo12 {
     max-width: 80%;
   }
-
-  /* CORPO 13 */
-
-
 
   /* CORPO 14 */
   #Corpo14 {
