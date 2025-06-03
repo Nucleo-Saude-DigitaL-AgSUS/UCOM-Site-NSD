@@ -1,5 +1,5 @@
 /* CELULARES */
-@media (min-width: 350px) and (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 768px) {
   header,
   .navbar-nav,
   .conteudo-c2,
@@ -144,7 +144,8 @@
   }
 
   .logo-c2 {
-    width: 60%;
+    width: 100%;
+    max-width: 10rem;
     height: auto;
     left: 30%;
     top: -1%;
@@ -864,15 +865,88 @@
 }
 
 /* TABLETES */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  header,
+  .navbar-nav,
+  .conteudo-c2,
+  .corpo3__container,
+  .corpo3__buttons,
+  #Corpo5,
+  .onde-atuamos__botoes {
+    flex-direction: column !important;
+    text-align: center !important;
+    margin: 0% 1%;
+  }
   body {
-    font-size: 1.1rem;
+    position: relative;
+    margin: 0% 1%;
+    font-size: 1rem;
+  }
+  header {
+    flex-direction: row !important;
+    padding: 20px !important;
+    height: auto;
   }
 
-  header {
-    padding: 25px 5%;
-    height: auto;
+  .container-fluid {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler, .navbar-collapse, .collapse {
+    background: #e5e5e5 !important;
+    margin-left: 35%;
+    font-size: 1rem;
+  }
+
+  .collapse a ul li {
+    font-size: 0.6rem !important;
+  }
+
+  .nav-link{
+    font-size: 1rem !important;
+  }
+
+  #navbarNav {
+    display: none;
+    flex-direction: column;
+    background: #0dd4ac;
+    border-radius: 0 0 20px 20px;
+    width: 60%;
+    padding: 1rem;
+    margin-top: 10px;
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #navbarNav.show {
+    display: flex !important;
+  }
+
+  .navbar-toggler {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    align-self: flex-end;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #fff;
+    background: #fff;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  body {
+    font-size: 1.1rem;
   }
 
   .logo {
@@ -880,18 +954,6 @@
     margin-left: 0;
   }
 
-  .navbar-toggler {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-  }
-
-  #navbarNav {
-    width: 50%;
-    top: 100%;
-    left: 0;
-    padding: 1rem;
-  }
 
   /* CORPO 2 */
   .conteudo-c2 {
@@ -901,20 +963,35 @@
 
   .texto-c2 {
     padding: 0 10px;
+    font-size: 1.2rem;
+    margin-top: 10%;
   }
 
   .imagem-susete {
-    width: 25%;
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
   }
 
   .logo-c2 {
-    width: 50%;
+    width: 80%;
+    position: relative;
   }
 
   /* CORPO 3 */
   .corpo3__container,
   .corpo3__buttons {
     flex-direction: column;
+    gap: 1%;
+  }
+  .corpo3__text {
+    font-size: 1rem;
+  }
+
+  .btn_c3 {
+    width: 50%;
+    height: 5%;
+    padding-top: 5%;
   }
 
   /* CORPO 5 */
@@ -922,11 +999,7 @@
     padding: 5% 5%;
   }
 
-  .onde-atuamos__imagem {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-  }
+ 
 
   .onde-atuamos__botoes {
     grid-template-columns: repeat(3, 1fr);
@@ -964,6 +1037,15 @@
     flex-direction: column;
     padding: 0 20px;
     font-size: 1rem;
+  }
+
+  #Corpo10A {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tituloCorpo10A {
+    text-align: center;
   }
 
   /* CORPO 11 */
@@ -1034,9 +1116,13 @@
     right: 20px;
     font-size: 0.9rem;
   }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1600px) {
   
   body, html {
     font-size: 1rem;
